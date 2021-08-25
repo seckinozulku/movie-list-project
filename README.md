@@ -1,12 +1,12 @@
 #MovieList Project
 
 #Proje Kapsamı
-
+Bu proje Kodluyoruz İstanbul Front-End Web Development Bootcamp bitirme projesidir.
 MovieList projesi bir film listeleme projesidir. Sitenin anasayfasında bütün filmler listelenir ve bu listeye çeşitli filtreler uygulanabilir yada manuel olarak araba çubuğundan aratılabilir. Siteye üye girişi yapan kullanıcı, ana sayfadaki filmlerden istediklerini "izlediklerim(watchedList)" ve "izleyeceklerim(watchList)" listelerine kaydedebilir veya çıkarabilir. Oluşturdukları bu listeleri görüntüleyebilirler
 
 #Teknik Detayları
 
-Proje React ile yazılmıştır ve Hooks kullanılmıştır. React Router mevcuttur.
+Proje React ile yazılmıştır ve Hooks kullanılmıştır. React-Router-Dom mevcuttur.
 Stillerin yazımı için CSS In Js metodu kullanılmış ve kodun okunurluğunu arttırmak için styled component kütüphanesi kullanılmıştır API istekleri için Axios kütüphanesinden yararlanılmıştır ve Context API kullanılmıştır..
 
 #Çalıştırılması
