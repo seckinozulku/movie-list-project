@@ -13,7 +13,7 @@ Stillerin yazımı için CSS In Js metodu kullanılmış ve kodun okunurluğunu 
 
 Proje klonlandıktan ya da forklandıktan sonra  terminale 'npm install' yazılarak paketler yüklenir.Sonrasında 'npm start' ile başlatılabilir. API'e ulaşım ve parametreler için-> [The Movie DataBase API (TMDB)](https://developers.themoviedb.org/3/getting-started/introduction). Çalıştırılmasına dair daha kapsamlı detaylar alt satırlarda mevcuttur.
 
-#Live Demo
+#Live Demo <br>
 https://wonderful-euler-5f3ea0.netlify.app/
 
 #Dosya Yapısı
