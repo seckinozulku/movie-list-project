@@ -1,19 +1,19 @@
-#MovieList Project
+# MovieList Project
 
-#Proje Kapsamı
+# Proje Kapsamı
 
 MovieList projesi bir film listeleme projesidir. Sitenin anasayfasında bütün filmler listelenir ve bu listeye çeşitli filtreler uygulanabilir yada manuel olarak araba çubuğundan aratılabilir. Siteye üye girişi yapan kullanıcı, ana sayfadaki filmlerden istediklerini "izlediklerim(watchedList)" ve "izleyeceklerim(watchList)" listelerine kaydedebilir veya çıkarabilir. Oluşturdukları bu listeleri görüntüleyebilirler
 
-#Teknik Detayları
+# Teknik Detayları
 
 Proje React ile yazılmıştır ve Hooks kullanılmıştır. React Router mevcuttur.
 Stillerin yazımı için CSS In Js metodu kullanılmış ve kodun okunurluğunu arttırmak için styled component kütüphanesi kullanılmıştır API istekleri için Axios kütüphanesinden yararlanılmıştır ve Context API kullanılmıştır..
 
-#Çalıştırılması
+# Çalıştırılması
 
 Proje klonlandıktan ya da forklandıktan sonra  terminale ```npm install``` yazılarak paketler yüklenir.Sonrasında ```npm start``` ile başlatılabilir. API'e ulaşım ve parametreler için-> [The Movie DataBase API (TMDB)](https://developers.themoviedb.org/3/getting-started/introduction). Çalıştırılmasına dair daha kapsamlı detaylar alt satırlarda mevcuttur.
 
-#Dosya Yapısı
+# Dosya Yapısı
 ```
 # Project tree
 movie-list
