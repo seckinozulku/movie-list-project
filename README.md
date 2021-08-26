@@ -15,7 +15,7 @@ Proje klonlandıktan ya da forklandıktan sonra  terminale ```npm install``` yaz
 
 # Live Demo : <br>
 
-https://app.netlify.com/sites/wonderful-euler-5f3ea0/overview
+https://wonderful-euler-5f3ea0.netlify.app/
 
 # Dosya Yapısı
 ```
