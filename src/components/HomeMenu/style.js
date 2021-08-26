@@ -1,5 +1,5 @@
-import styled, {css} from "styled-components/macro";
-import {Link} from "react-router-dom";
+import styled from "styled-components/macro";
+import {NavLink} from "react-router-dom";
 
 export const Navbar = styled.div`
   align-items: center;
@@ -32,15 +32,15 @@ export const ListItem = styled.li`
   }
 `;
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(NavLink)`
   color: white;
   text-decoration: none;
-  ${({isActive}) => isActive &&
-          css`
-            color: #34DBD8;
-          `}
   
-  :hover {
+  &.active{
+    color: #34DBD8;
+  }
+  
+  &:hover {
     color: #A7F8C9;
     
   }
@@ -58,11 +58,11 @@ export const Profile = styled.div`
   cursor: pointer;
   display: flex;
   font-weight: 600;
-  height: 40px;
   justify-content: center;
   margin-right: 100px;
+  min-height: 40px;
+  min-width: 40px;
   text-transform: uppercase;
-  width: 40px;
 `;
 
 export const DropdownMenu = styled.div`

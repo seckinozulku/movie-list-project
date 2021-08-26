@@ -33,7 +33,7 @@ const SearchBar = ({ setMovies, setKeyword, keyword }) => {
 				onChange={(e) => handleOnChange(e?.target?.value)}
 				value={keyword || ""}
 				onKeyPress={(e) => enterPressed(e)}
-				placeholder={"Search For A Movie , TV Show"}
+				placeholder={"Search For A Movie , Tv Show"}
 			/>
 			<SearchButton onClick={searchMovies}>Search</SearchButton>
 		</SearchWrapper>

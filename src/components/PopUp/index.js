@@ -25,7 +25,7 @@ const PopUp = ({selectedMovie,isWatchList}) => {
 	} = useContext(GlobalContext);
 	const isInWatchList = watchList?.find(item => item?.id === selectedMovie?.id);
 	const isInWatched = watched?.find(item => item?.id === selectedMovie?.id);
-
+	const isLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
 
 	return (
 		<PopUpWrapper isWatchList={isWatchList}>
@@ -49,6 +49,7 @@ const PopUp = ({selectedMovie,isWatchList}) => {
 					</InfoWrapper>
 
 					{selectedMovie?.vote_average !== 0 && <CircularProgressBar rate={selectedMovie?.vote_average * 10}/>}
+					{ isLoggedIn &&
 					<WatchButtons>
 						<WatchListAdd
 							title={isInWatchList ? "Remove From Watchlist" : "Add To Watchlist"}
@@ -66,7 +67,7 @@ const PopUp = ({selectedMovie,isWatchList}) => {
 							{isInWatched ? "x" : "✓"}
 						</WatchListAdd>
 					</WatchButtons>
-
+					}
 					<BackOverview>{selectedMovie?.overview}</BackOverview>
 				</ContentWrapper>
 			</PopupContent>

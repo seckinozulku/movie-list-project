@@ -10,11 +10,13 @@ export const SearchInput = styled.input`
   border: 1px solid #e3e3e3;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
   font-size: 15px;
   height: 35px;
   padding-left: 20px;
   position: absolute;
-  width: 93%;
+  width: 100%;
+  
   &:focus {
     outline: none;
   }
@@ -28,8 +30,8 @@ export const SearchButton = styled.button`
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  height: 39px;
+  height: 35px;
   position: absolute;
-  right: 10px;
+  right: 0;
   width: 150px;
 `;

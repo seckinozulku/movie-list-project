@@ -3,9 +3,16 @@ import Menu from "../../components/HomeMenu";
 import {Content, ContentWrapper} from "../../components/Layout/style";
 import MovieList from "../../components/MovieList";
 import {GlobalContext} from "../../context/GlobalState";
+import {useHistory} from "react-router-dom";
 
 const Watched = () => {
 	const {watched} = useContext(GlobalContext);
+	const isLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
+	const history = useHistory();
+
+	if (!isLoggedIn) {
+		history.push("/login");
+	}
 
 	return (
 		<div>

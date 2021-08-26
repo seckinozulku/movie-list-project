@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom";
 import {Logo} from "../Filters/style";
 
 const Menu = () => {
-	const isLoggedIn = localStorage.getItem("isLoggedIn");
+	const isLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
 	const user = JSON.parse(localStorage.getItem("user"));
 	const [isDropDownOpen, setIsDropDownOpen] = useState(false);
 	const history = useHistory();
@@ -15,8 +15,8 @@ const Menu = () => {
 
 	const exitButton = () => {
 		localStorage.removeItem("user");
-		localStorage.setItem("isLoggedIn", "false");
-		history.push("/login");
+		localStorage.setItem("isLoggedIn", JSON.stringify(false));
+		window.location.reload();
 	};
 
 	const handleOutsideClick = (e) => {
@@ -32,32 +32,34 @@ const Menu = () => {
 	}, []);
 
 
-	const refreshPage = () =>{
+	const refreshPage = () => {
 		if (window.location.pathname === "/") {
 			window.location.reload();
 		} else {
 			history.push("/");
 		}
-
 	};
+
 	return (
 		<Navbar>
 			<List>
 				<ListItem>
-					<MenuLink to={"/"} onClick={ refreshPage }>
+					<MenuLink to={"/"} onClick={refreshPage}>
 						<Logo src="./logo.png" alt="Logo"/>
 					</MenuLink>
 				</ListItem>
 				<ListItem>
-					<MenuLink to={"/watched"} isActive={window.location.pathname === "/watched"}>Watched</MenuLink>
+					<MenuLink to={"/watch-list"} >Watch List </MenuLink>
 				</ListItem>
 				<ListItem>
-					<MenuLink to={"/watch-list"} isActive={window.location.pathname === "/watch-list"}>Watch List </MenuLink>
+					<MenuLink to={"/watched"} >Watched</MenuLink>
 				</ListItem>
 			</List>
 
 			{isLoggedIn ?
-				<Profile onClick={(e) => handleOutsideClick(e)}>{user?.firstName?.charAt(0)}</Profile> :
+				<Profile onClick={(e) => handleOutsideClick(e)}>
+					{user?.firstName?.charAt(0)}
+				</Profile> :
 				<Login>
 					<MenuLink to={"/login"}> Login </MenuLink>
 				</Login>

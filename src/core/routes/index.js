@@ -9,7 +9,6 @@ export const routes = [
 	{
 		path: "/",
 		Component: Home,
-		requireAuth: false
 	},
 	{
 		path: "/login",
@@ -18,11 +17,9 @@ export const routes = [
 	{
 		path: "/watched",
 		Component: Watched,
-		requireAuth: true
 	},
 	{
 		path: "/watch-list",
 		Component: WatchList,
-		requireAuth: true
 	}
 ];

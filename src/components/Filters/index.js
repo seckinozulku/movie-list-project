@@ -69,7 +69,7 @@ const Filters = ({setFilters}) => {
 						<FilterName>Genres</FilterName>
 						<Genres>
 							{genres?.map((item) =>
-								<GenreButton onClick={() => handleGenreChange(item?.id)}
+								<GenreButton key={item?.id} onClick={() => handleGenreChange(item?.id)}
 									isActive={selectedFilters?.genresFilter?.includes(item?.id)}>
 									{item?.name}
 								</GenreButton>
