@@ -17,45 +17,6 @@ Proje klonlandıktan ya da forklandıktan sonra  terminale ```npm install``` yaz
 
 https://wonderful-euler-5f3ea0.netlify.app/
 
-# Dosya Yapısı
-```
-# Project tree
-movie-list
-├── public
-│   ├──  favicon.ico
-│   ├── imageNotFound.svg
-│   ├── index.html
-│   ├── logo.png
-│   ├── userData.JSON
-├── src
-│    ├── components
-│    │        └──CircularProgressBar
-│    │        └──Filters
-│    │        └──HomeMenu
-│    │        └──Layout
-│    │        └──Loading
-│    │        └──LoginForm
-│    │        └──MovieList
-│    │        └──PopUp
-│    │        └──SearchBar
-│    ├── context
-│    ├── core
-│    │     └──routes
-│    ├── screens
-│            └──home
-│            └──login
-│            └──watched
-│            └──watchList
-│        
-└──App.css
-└──App.js
-└──index.css
-└──index.js
-```
----
-
-
-
 
 # Getting Started with Create React App
 
